@@ -127,22 +127,34 @@ section {
 .letter-avatar-red {
   width: 50px;
   height: 50px;
-  background-color: var(--dk-pink);
+  color: var(--dk-pink);
+  background-color: var(--lt-pink);
   border-radius: 50%;
-}
-
-.letter-avatar-blue {
-  width: 50px;
-  height: 50px;
-  background-color: var(--dk-yellow);
-  border-radius: 50%;
+  text-align: center;
+  font-weight: 10px;
+  font-size: 16px;
 }
 
 .letter-avatar-yellow {
   width: 50px;
   height: 50px;
-  background-color: var(--dk-green);
+  background-color: var(--lt-yellow);
+  color: var(--dk-yellow);
   border-radius: 50%;
+  text-align: center;
+  font-weight: 10px;
+  font-size: 16px;
+}
+
+.letter-avatar-green {
+  width: 50px;
+  height: 50px;
+  background-color: var(--lt-green);
+  color: var(--dk-green);
+  text-align: center;
+  border-radius: 50%;
+  font-weight: 10px;
+  font-size: 16px;
 }
 
 /* .avtarimg2 {
