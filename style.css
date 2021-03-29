@@ -1,3 +1,24 @@
+:root {
+  --primary-color: #09d3ac;
+  --secondary-color: #c6f2d6;
+  --tertiary-color: #f3f4f6;
+  --body-color: #f0f8ff;
+  --white-color: #fff;
+  --grey-color: #9ca3af;
+  --lt-blue: #adeef1;
+  --dk-blue: #11a8d5;
+  --lt-green: #d1fae5;
+  --dk-green: #10b981;
+  --lt-pink: #fbcfe8;
+  --dk-pink: #f50057;
+  --lt-yellow: #fef3c7;
+  --dk-yellow: #fbbf24;
+  --primary-box-shadow: 8px 8px 16px #dfe7ed, -8px -8px 16px #ffffff;
+  --secondary-box-shadow: 2px 4px 20px -1px rgb(0 0 0 / 3%),
+    -1px -2px 20px -1px rgb(0 0 0 / 3%);
+  --tertiary-box-shadow: 6.61px 6.61px 9px #e6eef5, -6.61px -6.61px 9px #faffff;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -48,7 +69,7 @@ section {
   border-radius: 20px;
 }
 
-.rnd-avatar-img-holder {
+.avatar-img-holder {
   display: flex;
   flex-direction: row;
   gap: 1rem;
@@ -102,6 +123,28 @@ section {
   background-size: cover;
   border-radius: 50%;
 }
+
+.letter-avatar-red {
+  width: 50px;
+  height: 50px;
+  background-color: var(--dk-pink);
+  border-radius: 50%;
+}
+
+.letter-avatar-blue {
+  width: 50px;
+  height: 50px;
+  background-color: var(--dk-yellow);
+  border-radius: 50%;
+}
+
+.letter-avatar-yellow {
+  width: 50px;
+  height: 50px;
+  background-color: var(--dk-green);
+  border-radius: 50%;
+}
+
 /* .avtarimg2 {
   display: flex;
   flex-direction: horizontal;
