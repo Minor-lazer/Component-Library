@@ -280,3 +280,36 @@ section {
   border-color: black;
   color: var(--lt-green);
 }
+
+/*--------------------------- Badge Desiging ------------------------------*/
+.row {
+  display: flex;
+  flex-direction: horizontal;
+  gap: 2rem;
+}
+.badge-holder {
+  position: relative;
+}
+
+.badge-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--primary-box-shadow);
+}
+
+.badge-btn {
+  height: 15px;
+  width: 15px;
+  border-radius: 10px;
+  border-color: white;
+  box-sizing: border-box;
+  position: relative;
+  bottom: 1.1rem;
+  right: 0.1rem;
+  left: 2.8rem;
+  background-color: var(--dk-yellow);
+}
