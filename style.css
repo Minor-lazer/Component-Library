@@ -282,12 +282,23 @@ section {
 }
 
 /*--------------------------- Badge Desiging ------------------------------*/
-.row {
+.row-first {
   display: flex;
   flex-direction: horizontal;
   gap: 2rem;
 }
-.badge-holder {
+
+.row-second {
+  display: flex;
+  flex-direction: horizontal;
+  gap: 2rem;
+}
+
+.badge-holder-one {
+  position: relative;
+}
+
+.badge-holder-two {
   position: relative;
 }
 
@@ -312,4 +323,112 @@ section {
   right: 0.1rem;
   left: 2.8rem;
   background-color: var(--dk-yellow);
+}
+.icon-badge {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dk-blue);
+  box-shadow: var(--primary-box-);
+}
+
+.badge-btn-top {
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  border-color: white;
+  box-sizing: border-box;
+  position: relative;
+  top: 1.2rem;
+  /* bottom: 1.1rem; */
+  right: 0.1rem;
+  left: 2.8rem;
+  background-color: var(--dk-yellow);
+}
+
+/*------------------------------------------BUTTON-DESIGING--------------------------------------------------- */
+.button-row {
+  display: flex;
+  flex-direction: horizontal;
+  margin-bottom: 50px;
+  gap: 3rem;
+}
+
+h3 {
+  margin-bottom: 30px;
+}
+
+.green {
+  background-color: var(--dk-green);
+  color: var(--lt-green);
+}
+
+.btn {
+  outline: none;
+  padding: 0.8rem 1rem;
+  font-size: large;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: var(--primary-box-shadow);
+}
+
+.pink {
+  background-color: var(--dk-pink);
+  color: var(--lt-green);
+}
+
+.link {
+  outline: none;
+  padding: 0.8rem 1rem;
+  font-size: large;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: var(--primary-box-shadow);
+}
+
+.floating-btn-yellow {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--dk-yellow);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--primary-box-shadow);
+  outline: none;
+  border: none;
+}
+
+.floating-btn-red {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--dk-pink);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--primary-box-shadow);
+  outline: none;
+  border: none;
+}
+
+.floating-btn-blue {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--dk-blue);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--primary-box-shadow);
+  outline: none;
+  border: none;
 }
