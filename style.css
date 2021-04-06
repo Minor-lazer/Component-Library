@@ -432,3 +432,124 @@ h3 {
   outline: none;
   border: none;
 }
+
+/* ----------------------------------------CARD-DECORATION----------------------------------- */
+.row-one {
+  display: flex;
+  flex-direction: horizontal;
+}
+.card-section-1 {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card-box {
+  margin: 1rem 2rem;
+  max-width: 300px;
+  position: relative;
+  border-radius: 1rem;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: var(--secondary-box-shadow);
+}
+
+.card-image {
+  border-radius: 1rem 1rem 0 0;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+}
+
+.like-btn-holder {
+  display: flex;
+  flex-direction: horizontal;
+  gap: 10rem;
+  margin-left: 8px;
+  margin-bottom: 1rem;
+}
+
+.like-btn {
+  color: var(--primary-color);
+  background-color: var(--tertiary-color);
+  border: 2px solid var(--dk-green);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--primary-box-shadow);
+  outline: none;
+  border: none;
+}
+
+.buy-btn {
+  margin-left: 8px;
+  background-color: var(--dk-green);
+  color: var(--lt-green);
+  outline: none;
+  padding: 0.7rem 6rem;
+  font-size: large;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--primary-box-shadow);
+}
+
+.card-badge {
+  background-color: var(--dk-pink);
+  color: var(--lt-pink);
+  position: relative;
+  left: 0.1rem;
+  bottom: 23.1rem;
+  width: 100px;
+  padding: 0.3rem;
+  clip-path: polygon(0% 0%, 71% 0%, 53% 50%, 69% 97%, 0 97%);
+}
+
+.card-badge-tilted {
+  content: "Most Popular";
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 20px;
+  transform: rotate(45deg);
+  width: 120px;
+  background-color: var(--dk-pink);
+  color: var(--lt-pink);
+  display: block;
+  position: relative;
+  bottom: 23.6rem;
+  left: 12.8rem;
+  clip-path: polygon(
+    120px 20px,
+    90px -10px,
+    30px -10px,
+    0px 20px,
+    10px 30px,
+    110px 30px
+  );
+}
+
+.cross {
+  color: var(--dk-green);
+}
+
+.cross-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--lt-green);
+  position: relative;
+  bottom: 10rem;
+  left: 16rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+}
