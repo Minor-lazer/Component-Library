@@ -553,3 +553,199 @@ h3 {
   outline: none;
   border: none;
 }
+
+.card-overlay {
+  position: relative;
+  border-radius: 1rem;
+  box-sizing: border-box;
+}
+
+.card-overlay > .image-overlay {
+  opacity: 0.7;
+  border-radius: 1rem;
+}
+
+.image-overlay {
+  width: 100%;
+  max-width: 400px;
+}
+
+.text-overlay {
+  position: absolute;
+}
+
+.card-overlay > h3 {
+  top: 2rem;
+  left: 1rem;
+}
+
+.h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.5rem 0;
+}
+
+.card-overlay > p {
+  left: 0.8rem;
+  bottom: 9rem;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 0.2rem 0;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.text-card {
+  margin: 1rem 2rem;
+  max-width: 300px;
+  position: relative;
+  border-radius: 1rem;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: var(--secondary-box-shadow);
+}
+.show-btn {
+  margin-left: 8px;
+  background-color: var(--dk-green);
+  color: var(--lt-green);
+  outline: none;
+  padding: 0.7rem 1rem;
+  font-size: large;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--primary-box-shadow);
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0rem 0;
+  margin-bottom: 5px;
+}
+
+small {
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0.1rem 0;
+  margin-top: 2px;
+}
+
+/* ---------------Horizontal Card----------- */
+.row-5 {
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+  max-width: 550px;
+  box-shadow: var(--secondary-box-shadow);
+}
+
+.hori-card {
+  display: flex;
+  max-width: 500px;
+  gap: 1rem;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.hori-card-img {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 0.5rem;
+}
+
+.hori-card-info {
+  padding: 1rem;
+}
+
+.card-quant {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+  align-items: baseline;
+}
+
+.floating-minus-btn {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border: none;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  border: none;
+  box-shadow: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--primary-box-shadow);
+  outline: none;
+  border: none;
+}
+
+.floating-plus-btn {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border: none;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  border: none;
+  box-shadow: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--primary-box-shadow);
+  outline: none;
+  border: none;
+}
+
+.checkout-btn {
+  outline: none;
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: var(--primary-box-shadow);
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+.wishlist-btn {
+  outline: none;
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: var(--primary-box-shadow);
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
