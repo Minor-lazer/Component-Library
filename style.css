@@ -32,11 +32,22 @@ body {
   flex-direction: horizontal;
 }
 
+.header-navigation {
+  flex: 2;
+}
 .navbar {
   background-color: black;
-  /* margin: 20px 20px; */
   padding: 20px 20px;
   border-bottom: ridge;
+}
+
+.heading-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-item {
+  color: white;
 }
 
 .sidebar {
@@ -73,7 +84,7 @@ section {
   border-radius: 20px;
 }
 
-.avatar-img-holder {
+.square-avatar {
   display: flex;
   flex-direction: row;
   gap: 1rem;
@@ -919,4 +930,59 @@ p {
   padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: var(--primary-box-shadow);
+}
+/* ---------List---------- */
+
+.ul-list {
+  padding: 2rem;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.list-item:hover {
+  background-color: var(--lt-green);
+  box-shadow: 4px 5px 3px #8b8b8b70, -9.91px -9.91px 15px #f3f4f6;
+  /* cursor: pointer; */
+}
+.list-item {
+  font-size: 1.7rem;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-left: 3px solid var(--dk-green);
+  border-radius: 1.5 1.5rem;
+}
+
+.stacked-list-item {
+  padding: 1rem;
+  border: 2px solid var(--dk-blue);
+  border-bottom: 1px;
+}
+
+li {
+  list-style: none;
+}
+
+.stacked-list-item:hover {
+  background-color: var(--lt-blue);
+  border: 1px solid var(--dk-blue);
+  cursor: pointer;
+}
+
+/* ----------------------Carbon Frames------------------------ */
+.mg2-0-1 {
+  margin: 2rem 0 1rem;
+}
+
+.foundation-iframes {
+  border: 0;
+  transform: scale(1);
+  overflow: hidden;
+  border-radius: 1rem;
 }
