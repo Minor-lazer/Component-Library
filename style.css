@@ -43,24 +43,36 @@ body {
 }
 
 .header-nav-ul li:hover {
-  background-color: var(--body-color);
+  background-color: #5555e0;
+  border-radius: 10px;
   padding: 2rem 3rem 1;
   justify-content: center;
   cursor: pointer;
 }
 
+.top-name {
+  margin: 1rem 1rem 1rem;
+  font-weight: 700px;
+  font-size: 1.3rem;
+  color: #5555e0;
+}
+
 .nav-item {
+  border-top: solid #5555e0;
+  /* border-bottom: solid #5555e0; */
   color: black;
+  padding: 1rem 1rem 1rem;
+  border-radius: 0.5;
+  font-size: 1.3rem;
+  font-weight: 2rem;
+}
+
+.nav-item a {
+  font-weight: 10px;
 }
 
 .nav-item-logo {
   margin-right: 5rem;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
 }
 
 body > nav {
@@ -91,6 +103,7 @@ body > main {
   margin: 23px 240px 0;
   /* padding: 10px 10px 0; */
   border-radius: 0.5rem 0 0 0;
+  border-top: black;
   padding: 0rem 3% 0;
   background-color: white;
 }
@@ -110,7 +123,9 @@ body > main {
 }
 
 .comp-nav ul li:hover {
-  background-color: var(--body-color);
+  background-color: #5555e0;
+  border-radius: 10px;
+  color: white;
   padding: 2rem 3rem 1;
   justify-content: center;
   cursor: pointer;
@@ -118,21 +133,85 @@ body > main {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
-.wall {
-  background-color: white;
-  padding-left: 209px 50px;
-  width: 100%;
-  height: 100%;
-  border: ridge;
+a:hover {
+  text-decoration: none;
+  color: white;
 }
 
-/* section {
-  padding: 100px 100px;
-  margin: 100px 100px;
-} */
+/* -------------------Intro-Page------------------- */
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: -1rem 12rem 0rem;
+}
+
+.logo-img {
+  margin-right: 2rem;
+}
+
+.logo-font {
+  color: #5555e0;
+  margin-left: -3rem;
+  margin-bottom: 4rem;
+  font-size: 2.5rem;
+  font-weight: 700px;
+}
+.parent-head {
+  margin: auto;
+  max-width: 700px;
+  width: 80%;
+  text-align: center;
+  color: #333333;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.sub-head {
+  margin: auto;
+  padding: 1rem 0 1.5rem;
+  max-width: 750px;
+  width: 90%;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+.btn-inner {
+  display: inline;
+}
+
+.pad {
+  padding: 1rem;
+}
+
+.dive-btn {
+  margin-left: 16rem;
+  background-color: #5555e0;
+  color: white;
+  outline: none;
+  padding: 0.7rem 6rem;
+  font-size: large;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.dive-btn-font {
+  color: white;
+}
+
+.dive-btn:hover {
+  background-color: rgb(151, 130, 248);
+}
 /*------------------------------------ AVATAR SECTION DESIGNING -----------------------------------*/
 .sqr-avatar-img {
   width: 80px;
@@ -175,6 +254,7 @@ a {
 }
 
 .avtar-section {
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -908,8 +988,8 @@ input {
 .fit-label-txtarea {
   position: relative;
   pointer-events: none;
-  left: 39px;
-  bottom: 20px;
+  left: 2rem;
+  bottom: 13rem;
   transition: 0.2s ease all;
   color: var(--primary-color);
 }
@@ -965,6 +1045,14 @@ input {
   display: grid;
   grid-gap: 1rem;
   justify-content: center;
+}
+
+.grid3 {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .grid-item {
@@ -1029,6 +1117,7 @@ p {
   padding: 0.2rem 0;
 }
 
+/* ------------------TOAST--------------- */
 .toast {
   padding: 1rem;
   max-width: fit-content;
@@ -1036,9 +1125,17 @@ p {
   box-shadow: var(--primary-box-shadow);
 }
 
-.error-toast {
+.tl-errpr {
   background-color: var(--lt-pink);
   color: var(--dk-pink);
+}
+
+.tl-content-error {
+  border-left: 3px solid var(--dk-pink);
+  display: flex;
+  gap: 0.5rem;
+  padding: 0 1rem;
+  align-items: center;
 }
 
 .toast-lg {
