@@ -1112,12 +1112,46 @@ input {
   max-width: 300px;
   box-shadow: var(--tertiary-box-shadow);
 }
+/* -----------------------Modal--------------------- */
+
+.btn-modal-pri {
+  margin-left: 18px;
+  background-color: #5555e0;
+  color: var(--lt-green);
+  outline: none;
+  padding: 0.7rem 1rem;
+  font-size: large;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-modal-tri {
+  margin-left: 18px;
+  background-color: var(--tertiary-color);
+  color: #5555e0;
+  outline: none;
+  padding: 0.7rem 1rem;
+  font-size: large;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
 
 .modal {
-  background-color: var(--lt-yellow);
+  background: #fff;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+  box-shadow: #fff;
+  box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px,
+    rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+  background-color: #99aaff;
   padding: 1rem;
   margin: 1rem;
-  border-radius: 1rem;
   max-width: 500px;
   width: 100%;
   box-shadow: var(--secondary-box-shadow);
@@ -1269,7 +1303,7 @@ ul {
 }
 
 .list-item:hover {
-  background-color: var(--lt-green);
+  background-color: #99aaff;
   box-shadow: 4px 5px 3px #8b8b8b70, -9.91px -9.91px 15px #f3f4f6;
   /* cursor: pointer; */
 }
@@ -1277,7 +1311,7 @@ ul {
   font-size: 1.7rem;
   margin: 0.5rem 0;
   padding: 1rem;
-  border-left: 3px solid var(--dk-green);
+  border-left: 3px solid #5555e0;
   border-radius: 1.5 1.5rem;
 }
 
@@ -1285,7 +1319,7 @@ ul {
 
 .stacked-list-item {
   padding: 1rem;
-  border: 2px solid var(--dk-blue);
+  border: 2px solid #5555e0;
   border-bottom: 1px;
 }
 
@@ -1294,7 +1328,7 @@ li {
 }
 
 .stacked-list-item:hover {
-  background-color: var(--lt-blue);
+  background-color: #99aaff;
   border: 1px solid var(--dk-blue);
   cursor: pointer;
 }
