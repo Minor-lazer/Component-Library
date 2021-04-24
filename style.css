@@ -138,6 +138,10 @@ a {
 
 a:hover {
   text-decoration: none;
+  color: white;
+}
+
+.logo-font:hover {
   color: #5555e0;
 }
 
