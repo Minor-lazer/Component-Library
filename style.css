@@ -428,9 +428,10 @@ a:hover {
 }
 
 /*--------------------------- Badge Desiging ------------------------------*/
-
+/* -------------------Social Card----------------- */
 .card-social {
   width: 29%;
+  min-width: 100px;
   background: #fff;
   border: 1px solid #ccc;
   margin-bottom: 2rem;
@@ -675,6 +676,7 @@ h3 {
 
 .card-box {
   width: 38%;
+  min-width: 100px;
   background: #fff;
   border: 1px solid #ccc;
   /* margin-bottom: 2rem; */
@@ -857,6 +859,7 @@ p {
 
   margin: 1rem 2rem;
   max-width: 300px;
+  min-width: 100px;
   position: relative;
 }
 .show-btn {
@@ -907,6 +910,7 @@ small {
 .hori-card {
   display: flex;
   max-width: 500px;
+  min-width: 100px;
   gap: 1rem;
   background-color: #fff;
   padding: 1rem;
