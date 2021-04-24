@@ -13,6 +13,8 @@
   --dk-pink: #f50057;
   --lt-yellow: #fef3c7;
   --dk-yellow: #fbbf24;
+  --lt-violet: #99aaff;
+  --dk-violet: #5555e0;
   --primary-box-shadow: 8px 8px 16px #dfe7ed, -8px -8px 16px #ffffff;
   --secondary-box-shadow: 2px 4px 20px -1px rgb(0 0 0 / 3%),
     -1px -2px 20px -1px rgb(0 0 0 / 3%);
@@ -1244,23 +1246,36 @@ p {
 
 /* ------------------TOAST--------------- */
 .toast {
+  border: 1px solid #ccc;
+  transition: 0.3s;
+  box-shadow: #fff;
+  box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px,
+    rgb(0 0 0 / 30%) 0px 1px 3px -1px;
   padding: 1rem;
   max-width: fit-content;
-  border-radius: 0.6rem;
   box-shadow: var(--primary-box-shadow);
+  background-color: var(--dk-pink);
 }
 
 .tl-errpr {
-  background-color: var(--lt-pink);
-  color: var(--dk-pink);
+  background-color: white;
+  color: white;
 }
 
 .tl-content-error {
-  border-left: 3px solid var(--dk-pink);
+  border-left: 3px solid white;
   display: flex;
   gap: 0.5rem;
   padding: 0 1rem;
   align-items: center;
+}
+
+.error-toast-font {
+  color: white;
+}
+
+.error-circle {
+  color: white;
 }
 
 .toast-lg {
