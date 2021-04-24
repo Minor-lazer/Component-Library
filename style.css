@@ -342,7 +342,7 @@ a:hover {
 
 /* --------------------AVTAR SECTION END----------------------------- */
 
-/* ALERT SECTION DESIGNING*/
+/*---------------------- ALERT SECTION DESIGNING-------------------------*/
 
 .icon-color {
   color: var(--lt-green);
@@ -421,6 +421,10 @@ a:hover {
   box-shadow: var(--primary-box-shadow);
   border-color: black;
   color: var(--lt-green);
+}
+
+.cross-icon {
+  cursor: pointer;
 }
 
 /*--------------------------- Badge Desiging ------------------------------*/
