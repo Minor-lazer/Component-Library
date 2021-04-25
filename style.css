@@ -1051,11 +1051,15 @@ input {
   resize: none;
   padding: 1rem 2rem;
   margin: 1rem;
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--dk-violet);
   border-radius: 0.5rem;
   width: 100%;
   max-width: 300px;
   position: relative;
+}
+
+.input-txt:hover {
+  box-shadow: 0 0 1rem var(--dk-violet);
 }
 
 .input-txt-error {
@@ -1065,11 +1069,15 @@ input {
   resize: none;
   padding: 1rem 2rem;
   margin: 1rem;
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--dk-pink);
   border-radius: 0.5rem;
   width: 100%;
   max-width: 300px;
   box-shadow: var(--tertiary-box-shadow);
+}
+
+.input-txt-error:hover {
+  box-shadow: 0 0 1rem var(--dk-pink);
 }
 
 .fit-label {
@@ -1105,11 +1113,15 @@ input {
   resize: none;
   padding: 1rem 2rem;
   margin: 1rem;
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--dk-yellow);
   border-radius: 0.5rem;
   width: 100%;
   max-width: 300px;
   box-shadow: var(--tertiary-box-shadow);
+}
+
+.input-txt-warning:hover {
+  box-shadow: 0rem 0rem 1rem var(--dk-yellow);
 }
 
 .input-txt-area {
@@ -1119,11 +1131,15 @@ input {
   resize: none;
   padding: 6rem 0rem;
   margin: 1rem;
-  border: 2px solid var(--dk-yellow);
+  border: 2px solid var(--dk-green);
   border-radius: 0.5rem;
   width: 100%;
   max-width: 300px;
   box-shadow: var(--tertiary-box-shadow);
+}
+
+.input-txt-area:hover {
+  box-shadow: 0 0 1rem var(--dk-green);
 }
 /* -----------------------Modal--------------------- */
 
@@ -1170,7 +1186,7 @@ input {
   box-shadow: var(--secondary-box-shadow);
 }
 
-/* ---------------------------Grids----------------------------- */
+/*---------------------------Grids-----------------------------*/
 
 .grid-section {
   display: flex;
