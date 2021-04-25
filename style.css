@@ -1361,6 +1361,8 @@ ul {
 
 .stacked-list-item {
   padding: 1rem;
+  min-width: 100px;
+  min-height: auto;
   border: 2px solid #5555e0;
   border-bottom: 1px;
 }
