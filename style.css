@@ -1273,6 +1273,7 @@ p {
 
 /* ------------------TOAST--------------- */
 .toast {
+  min-width: 100px;
   border: 1px solid #ccc;
   transition: 0.3s;
   box-shadow: #fff;
@@ -1310,14 +1311,15 @@ p {
   gap: 1rem;
   align-items: baseline;
   max-width: 500px;
+  min-width: 100px;
   padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: var(--primary-box-shadow);
 }
 
 .tl-info {
-  background-color: var(--lt-yellow);
-  color: var(--dk-blue);
+  background-color: var(--lt-violet);
+  color: white;
 }
 
 .toast-lg {
@@ -1362,7 +1364,7 @@ ul {
 .stacked-list-item {
   padding: 1rem;
   min-width: 100px;
-  min-height: auto;
+  min-height: au;
   border: 2px solid #5555e0;
   border-bottom: 1px;
 }
