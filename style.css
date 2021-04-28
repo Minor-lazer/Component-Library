@@ -13,6 +13,8 @@
   --dk-pink: #f50057;
   --lt-yellow: #fef3c7;
   --dk-yellow: #fbbf24;
+  --lt-violet: #99aaff;
+  --dk-violet: #5555e0;
   --primary-box-shadow: 8px 8px 16px #dfe7ed, -8px -8px 16px #ffffff;
   --secondary-box-shadow: 2px 4px 20px -1px rgb(0 0 0 / 3%),
     -1px -2px 20px -1px rgb(0 0 0 / 3%);
@@ -138,7 +140,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: white;
+  color: #5555e0;
 }
 
 .logo-font-effect:hover {
@@ -344,7 +346,7 @@ a:hover {
 
 /* --------------------AVTAR SECTION END----------------------------- */
 
-/* ALERT SECTION DESIGNING*/
+/*---------------------- ALERT SECTION DESIGNING-------------------------*/
 
 .icon-color {
   color: var(--lt-green);
@@ -425,10 +427,15 @@ a:hover {
   color: var(--lt-green);
 }
 
-/*--------------------------- Badge Desiging ------------------------------*/
+.cross-icon {
+  cursor: pointer;
+}
 
+/*--------------------------- Badge Desiging ------------------------------*/
+/* -------------------Social Card----------------- */
 .card-social {
   width: 29%;
+  min-width: 100px;
   background: #fff;
   border: 1px solid #ccc;
   margin-bottom: 2rem;
@@ -545,6 +552,9 @@ a:hover {
 }
 
 .badge-btn-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 20px;
   width: 20px;
   border-radius: 10px;
@@ -552,7 +562,7 @@ a:hover {
   box-sizing: border-box;
   position: relative;
   top: 1.2rem;
-  /* bottom: 1.1rem; */
+
   right: 0.1rem;
   left: 2.8rem;
   background-color: var(--dk-yellow);
@@ -670,6 +680,7 @@ h3 {
 
 .card-box {
   width: 38%;
+  min-width: 100px;
   background: #fff;
   border: 1px solid #ccc;
   /* margin-bottom: 2rem; */
@@ -691,7 +702,7 @@ h3 {
 .card-image {
   width: 100%;
   max-width: 400px;
-  height: 50%;
+  height: auto;
   max-height: 300px;
   position: relative;
 }
@@ -852,6 +863,7 @@ p {
 
   margin: 1rem 2rem;
   max-width: 300px;
+  min-width: 100px;
   position: relative;
 }
 .show-btn {
@@ -902,6 +914,7 @@ small {
 .hori-card {
   display: flex;
   max-width: 500px;
+  min-width: 100px;
   gap: 1rem;
   background-color: #fff;
   padding: 1rem;
@@ -1042,11 +1055,15 @@ input {
   resize: none;
   padding: 1rem 2rem;
   margin: 1rem;
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--dk-violet);
   border-radius: 0.5rem;
   width: 100%;
   max-width: 300px;
   position: relative;
+}
+
+.input-txt:hover {
+  box-shadow: 0 0 1rem var(--dk-violet);
 }
 
 .input-txt-error {
@@ -1056,11 +1073,15 @@ input {
   resize: none;
   padding: 1rem 2rem;
   margin: 1rem;
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--dk-pink);
   border-radius: 0.5rem;
   width: 100%;
   max-width: 300px;
   box-shadow: var(--tertiary-box-shadow);
+}
+
+.input-txt-error:hover {
+  box-shadow: 0 0 1rem var(--dk-pink);
 }
 
 .fit-label {
@@ -1096,11 +1117,15 @@ input {
   resize: none;
   padding: 1rem 2rem;
   margin: 1rem;
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--dk-yellow);
   border-radius: 0.5rem;
   width: 100%;
   max-width: 300px;
   box-shadow: var(--tertiary-box-shadow);
+}
+
+.input-txt-warning:hover {
+  box-shadow: 0rem 0rem 1rem var(--dk-yellow);
 }
 
 .input-txt-area {
@@ -1110,11 +1135,15 @@ input {
   resize: none;
   padding: 6rem 0rem;
   margin: 1rem;
-  border: 2px solid var(--dk-yellow);
+  border: 2px solid var(--dk-green);
   border-radius: 0.5rem;
   width: 100%;
   max-width: 300px;
   box-shadow: var(--tertiary-box-shadow);
+}
+
+.input-txt-area:hover {
+  box-shadow: 0 0 1rem var(--dk-green);
 }
 /* -----------------------Modal--------------------- */
 
@@ -1161,7 +1190,7 @@ input {
   box-shadow: var(--secondary-box-shadow);
 }
 
-/* ---------------------------Grids----------------------------- */
+/*---------------------------Grids-----------------------------*/
 
 .grid-section {
   display: flex;
@@ -1248,23 +1277,37 @@ p {
 
 /* ------------------TOAST--------------- */
 .toast {
+  min-width: 100px;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+  box-shadow: #fff;
+  box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px,
+    rgb(0 0 0 / 30%) 0px 1px 3px -1px;
   padding: 1rem;
   max-width: fit-content;
-  border-radius: 0.6rem;
   box-shadow: var(--primary-box-shadow);
+  background-color: var(--dk-pink);
 }
 
 .tl-errpr {
-  background-color: var(--lt-pink);
-  color: var(--dk-pink);
+  background-color: white;
+  color: white;
 }
 
 .tl-content-error {
-  border-left: 3px solid var(--dk-pink);
+  border-left: 3px solid white;
   display: flex;
   gap: 0.5rem;
   padding: 0 1rem;
   align-items: center;
+}
+
+.error-toast-font {
+  color: white;
+}
+
+.error-circle {
+  color: white;
 }
 
 .toast-lg {
@@ -1272,14 +1315,15 @@ p {
   gap: 1rem;
   align-items: baseline;
   max-width: 500px;
+  min-width: 100px;
   padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: var(--primary-box-shadow);
 }
 
 .tl-info {
-  background-color: var(--lt-yellow);
-  color: var(--dk-blue);
+  background-color: var(--lt-violet);
+  color: white;
 }
 
 .toast-lg {
@@ -1323,6 +1367,8 @@ ul {
 
 .stacked-list-item {
   padding: 1rem;
+  min-width: 100px;
+  min-height: au;
   border: 2px solid #5555e0;
   border-bottom: 1px;
 }
