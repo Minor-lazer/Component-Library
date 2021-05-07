@@ -69,12 +69,18 @@ body {
   font-weight: 2rem;
 }
 
-.nav-item a {
+.nav-item a:hover {
   font-weight: 10px;
+  color:white;
 }
 
 .nav-item-logo {
   margin-right: 5rem;
+}
+
+.nav-list-item-font-color:hover
+{
+  color:white;
 }
 
 body > nav {
@@ -218,6 +224,8 @@ a:hover {
 .dive-btn:hover {
   background-color: rgb(151, 130, 248);
 }
+
+
 /*------------------------------------ AVATAR SECTION DESIGNING -----------------------------------*/
 .sqr-avatar-img {
   width: 80px;
